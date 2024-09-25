@@ -1,0 +1,20 @@
+#Include "PROTHEUS.CH"
+
+User function DIRETIVA()
+Local NVALOR1:= 10
+Local NVALOR2:= 20
+Local NRESULTADO := 0
+
+NRESULTADO := RECEBE(@NVALOR1,NVALOR2)
+
+Alert("Resultado da conta: "+ cValToChar(NRESULTADO))
+
+
+Static function RECEBE(NVALOR1,NVALOR2)
+Local NRETORNO := 0
+
+NVALOR1:=20
+
+NRETORNO := NVALOR1*NVALOR2
+
+Return (NRESULTADO)
